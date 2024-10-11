@@ -19,6 +19,11 @@
 body{
 	overflow-x: hidden;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 #to-top{
 	background-color: rgba(0, 0, 0, 0.6);
 	display: none;
@@ -118,10 +123,13 @@ body{
 }
 
 .top-nav__main{
-    padding: 35px 0 35px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 30px;
+    width: 100%;
     margin-bottom: -5px;
     z-index:2000;
-    position: relative;
 }
 
 .logo{
@@ -1068,10 +1076,16 @@ body{
     margin-bottom: 90px;
 }
 
-.blog-anons{
+.blog-anons {
     position: relative;
-    cursor: pointer;
-    display: block;
+    overflow: hidden;
+    cursor: default; /* Убираем кликабельность */
+    pointer-events: none; /* Отключаем кликабельность */
+    transition: box-shadow 0.3s ease; /* Плавная анимация при наведении */
+}
+
+.blog-anons:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Эффект подсветки при наведении */
 }
 
 .blog-anons__hidden{
@@ -1088,6 +1102,31 @@ body{
 .blog-anons:hover .blog-anons__hidden{
     display: block;
 }
+
+.blog-anons__text h3 {
+    color: #ffffff; /* Цвет текста */
+    font: 700 20px 'Lato', sans-serif; /* Шрифт и размер */
+    margin: 0 0 15px 0;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.blog-anons__text h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #23d2a9;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+/* Убираем анимацию нажатия */
+a.blog-anons.no-decoration {
+    pointer-events: none;
+    cursor: default;
+}
+
 
 .blog-anons__hidden > h3{
     font:700 20px 'Lato',sans-serif;
@@ -1127,15 +1166,12 @@ body{
     bottom: 0;
 }
 
-.blog-anons__text{
-    position:  absolute;
-    bottom: 20%;
-    left:5%;
-}
-
-.blog-anons__text h3{
-    font:700 20px 'Lato',sans-serif;
-    margin: 0 0 10px 0;
+.blog-anons__text {
+    position: absolute;
+    bottom: 20px; /* Отступ снизу */
+    left: 10px; /* Отступ слева */
+    right: 10px; /* Отступ справа */
+    text-align: left;
 }
 
 .partners{

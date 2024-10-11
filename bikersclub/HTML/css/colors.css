@@ -345,7 +345,7 @@ ul.triangle-list .triangle-list__one--active a,
 .customBgColor,
 .pagination .pagination__cell.pagination__cell--active
 {
-    background-color: #ce0000;
+    background-color: #0075ce;
 }
 
 /* Borders */
@@ -367,14 +367,14 @@ ul.triangle-list .triangle-list__one--active a,
 .pagination .pagination__cell.pagination__cell--active,
 .list__circle
 {
-    border-color:#ce0000;
+    border-color:#0075ce;
 }
 
 .aside-tabs__links .aside-tabs__active-link,
 .aside-tabs--about .aside-tabs__links a.aside-tabs__active-link,
 .sale.triangle-sale:after
 {
-    border-top-color:#ce0000;
+    border-top-color:#0075ce;
 }
 
 .main-nav li a:hover,
@@ -397,7 +397,7 @@ ul.triangle-list .triangle-list__one--active a,
 .title-space,
 .logo__title span
 {
-    color:#ce0000;
+    color:#0075ce;
 }
 
 
@@ -419,7 +419,7 @@ ul.triangle-list .triangle-list__one--active.triangle:after,
 .triangle-sale:after,
 .sale.triangle-sale:after
 {
-    border-bottom-color:#ce0000;
+    border-bottom-color:#0075ce;
 }
 
 .top-header__main,

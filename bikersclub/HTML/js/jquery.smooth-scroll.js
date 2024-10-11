@@ -250,3 +250,26 @@
   }
 
 })(jQuery);
+
+$(document).ready(function() {
+  const offset = $('.top-nav__main').outerHeight(); // Получаем высоту навигации
+
+  $('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    const targetId = $(this).attr('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      // Рассчитываем позицию с учетом высоты навигации
+      const offsetPosition = $(targetElement).offset().top - offset;
+
+      // Используем стандартное поведение прокрутки
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth' // Стандартная плавная прокрутка
+      });
+    }
+  });
+});
+
+

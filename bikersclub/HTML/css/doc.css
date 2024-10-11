@@ -7,6 +7,9 @@
 - Profile:	http://themeforest.net/user/andreysokoltsov
 
 -------------------------------------------------------------------*/
+html {
+	scroll-behavior: smooth;
+}
 .customBgColor{
 	background-color: #f76e2b;
 }
