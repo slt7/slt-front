@@ -1075,17 +1075,20 @@ html {
 }
 
 .blog-anons {
-    position: relative;
-    overflow: hidden;
-    cursor: default; /* Убираем кликабельность */
-    pointer-events: none; /* Отключаем кликабельность */
-    transition: box-shadow 0.3s ease; /* Плавная анимация при наведении */
+    position: relative !important;
+    overflow: hidden !important;
 }
 
 .blog-anons:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Эффект подсветки при наведении */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important; /* Эффект тени при наведении */
+    transform: scale(1.02) !important; /* Легкое увеличение всего блока */
 }
 
+/* Убираем анимацию нажатия */
+a.blog-anons.no-decoration {
+    pointer-events: none;
+    cursor: default;
+}
 .blog-anons__hidden{
    position:absolute;
    top:0;
@@ -1119,11 +1122,6 @@ html {
     left: 0;
     bottom: -5px;
 }
-/* Убираем анимацию нажатия */
-a.blog-anons.no-decoration {
-    pointer-events: none;
-    cursor: default;
-}
 
 
 .blog-anons__hidden > h3{
@@ -1153,8 +1151,11 @@ a.blog-anons.no-decoration {
     -ms-filter: "FlipH";
 }
 
-.blog-anons__img img{
-    width:100%;
+.blog-anons__img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Эффект увеличения при наведении */
 }
 
 .triangle--bigger:after{
@@ -1170,6 +1171,25 @@ a.blog-anons.no-decoration {
     left: 10px; /* Отступ слева */
     right: 10px; /* Отступ справа */
     text-align: left;
+}
+
+.blog-anons__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(40, 35, 35, 0.6); /* Полупрозрачный черный фон */
+    color: #fff; /* Белый текст */
+    text-align: center;
+    padding: 10px; /* Внутренние отступы для текста */
+}
+
+.blog-anons__caption h3 {
+    margin: 0;
+    font-size: 18px; /* Размер шрифта */
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .partners{

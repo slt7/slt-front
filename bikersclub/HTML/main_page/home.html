@@ -3,32 +3,59 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>System Logistics</title>
-		<link rel="icon" type="image/x-icon" href="media/favicon.png" /> <!--TODO-->
+		<title>Bikers Club</title>
+		<link rel="icon" type="image/x-icon" href="../media/favicon.png" />
 
-		<link href="css/master.css" rel="stylesheet">
+		<link href="../css/master.css" rel="stylesheet">
 
 		<!-- SWITCHER -->
-		<link rel="stylesheet" id="switcher-css" type="text/css" href="assets/switcher/css/switcher.css" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color2.css" title="color2" media="all" />
-
-
+		<link rel="stylesheet" id="switcher-css" type="text/css" href="../assets/switcher/css/switcher.css" media="all" />
+		<link rel="alternate stylesheet" type="text/css" href="../assets/switcher/css/color1.css" title="color1" media="all" data-default-color="true"  />
+		<link rel="alternate stylesheet" type="text/css" href="../assets/switcher/css/color2.css" title="color2" media="all" />
+		<link rel="alternate stylesheet" type="text/css" href="../assets/switcher/css/color3.css" title="color3" media="all" />
+		<link rel="alternate stylesheet" type="text/css" href="../assets/switcher/css/color4.css" title="color4" media="all" />
+		<link rel="alternate stylesheet" type="text/css" href="../assets/switcher/css/color5.css" title="color5" media="all" />
+		
 		<!--[if lt IE 9]>
 		<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
 	<body>
-		<!-- Loader -->
-		<div id="page-preloader"><span class="spinner"></span></div>
-		<!-- Loader end -->
+<!--		&lt;!&ndash; Loader &ndash;&gt;-->
+<!--		<div id="page-preloader"><span class="spinner"></span></div>-->
+<!--		&lt;!&ndash; Loader end &ndash;&gt;-->
 
-		<nav class="top-nav top-nav--home">
+		<!-- Start Switcher -->
+		<div class="switcher-wrapper">	
+			<div class="demo_changer">
+				<div class="demo-icon customBgColor"><i class="fa fa-cog fa-spin fa-2x"></i></div>
+				<div class="form_holder">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="predefined_styles">
+								<div class="skin-theme-switcher">
+									<h4>Color</h4>
+									<a href="#" data-switchcolor="color1" class="styleswitch" style="background-color:#ce0000;"> </a>
+									<a href="#" data-switchcolor="color2" class="styleswitch" style="background-color:#4fb0fd;"> </a>
+									<a href="#" data-switchcolor="color3" class="styleswitch" style="background-color:#ffc73c;"> </a>							
+									<a href="#" data-switchcolor="color4" class="styleswitch" style="background-color:#ff8300;"> </a>
+									<a href="#" data-switchcolor="color5" class="styleswitch" style="background-color:#02cc8b;"> </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Switcher -->
+
+		<nav id="header-top" class="top-nav top-nav--home">
 			<div class="container">
 				<div class="top-nav__main top-nav__main--home">
 					<div class="row">
 						<div class="col-md-3 col-xs-12">
-							<a href="home2.html" class="logo logo--home">
+							<a href="home-main.html" class="logo logo--home">
 								<span class="logo__moto">
 									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='50px' x="0px" y="0px"
 										viewBox="0 0 337.227 337.227" style="enable-background:new 0 0 337.227 337.227;" xml:space="preserve">
@@ -54,7 +81,7 @@
 													c4.601-2.529,9.883-3.976,15.501-3.976c17.797,0,32.226,14.43,32.226,32.226s-14.43,32.226-32.226,32.226
 													c-9.883,0-18.71-4.46-24.623-11.46c-7.49-2.219-16.361-4.64-24.236-6.239c6.26,21.076,25.754,36.463,48.859,36.463
 													c28.163,0,50.991-22.828,50.991-50.991S314.394,155.356,286.236,155.356z"/>
-												<path  d="M48.261,111.599c7.044-5.493,16.605-11.025,30.029-16.421l9.078-15.969l-12.537,5.668
+												<path d="M48.261,111.599c7.044-5.493,16.605-11.025,30.029-16.421l9.078-15.969l-12.537,5.668
 													C59.808,93.992,52.204,103.821,48.261,111.599z"/>
 												<path d="M301.884,101.303c-0.005,0-0.011,0-0.011,0c-3.601-0.179-7-0.267-10.204-0.267
 													c-16.807,0-28.267,2.328-36.034,5.238c-6.967,7.212-25.052,25.08-33.679,25.504c-0.044,0-0.615,0.016-0.664,0.016
@@ -91,7 +118,7 @@
 									</svg>
 								</span>
 								<h2 class="logo__title">
-									System<span>Logistics</span>
+									BIKER<span>Club</span>
 								</h2>
 							</a>
 						</div>
@@ -109,28 +136,30 @@
 									</button>
 								</div>
 								<ul class="collapse navbar-collapse navbar-nav-menu" id="nav">
-<!--									<li class="dropdown">-->
-<!--										<a class="no-decoration dropdown-toggle" data-toggle="dropdown" href="home-main new.html">Home <i class="fa fa-angle-down"></i></a>-->
-<!--										<span class="main-nav__separator"><span></span><span></span><span></span></span>-->
-<!--										<ul class="dropdown-menu">-->
-<!--											<li><a href="home-main new.html">Home 1</a></li>-->
-<!--											<li><a href="home.html">Home 2</a></li>-->
-<!--											<li><a href="home2.html">Home 3</a></li>-->
-<!--										</ul>-->
-<!--									</li>-->
-									<li><a class="no-decoration" href="about.html">О компании</a><span class="main-nav__separator"><span></span><span></span><span></span></span></li>
-									<li><a class="no-decoration" href="article.html">Услуги</a><span class="main-nav__separator"><span></span><span></span><span></span></span></li>
-<!--									<li><a class="no-decoration" href="item.html">Listings</a><span class="main-nav__separator"><span></span><span></span><span></span></span></li>-->
-									<li><a class="no-decoration" href="blog.html">Полезная информация</a><span class="main-nav__separator"><span></span><span></span><span></span></span></li>
-									<li><a class="no-decoration" href="contacts.html">Контакты</a><span class="main-nav__separator"><span></span><span></span><span></span></span></li>
+									<li class="dropdown">
+										<a class="no-decoration dropdown-toggle" data-toggle="dropdown" href="home-main.html">Home <i class="fa fa-angle-down"></i></a>
+										<span class="main-nav__separator"><span></span><span></span><span></span></span>
+										<ul class="dropdown-menu">
+											<li><a href="home-main.html">Home 1</a></li>
+											<li><a href="home.html">Home 2</a></li>
+											<li><a href="home2.html">Home 3</a></li>
+										</ul>
+									</li>
+									<li><a class="no-decoration" href="../about.html">About us</a><span class="main-nav__separator"><span></span><span></span><span></span></span></li>
+									<li><a class="no-decoration" href="../shop.html">Offer</a><span class="main-nav__separator"><span></span><span></span><span></span></span></li>
+									<li><a class="no-decoration" href="../article.html">Services</a><span class="main-nav__separator"><span></span><span></span><span></span></span></li>
+									<li><a class="no-decoration" href="../item.html">Listings</a><span class="main-nav__separator"><span></span><span></span><span></span></span></li>
+									<li><a class="no-decoration" href="../blog.html">Blog</a><span class="main-nav__separator"><span></span><span></span><span></span></span></li>
+									<li><a class="no-decoration" href="../contacts.html">Contact</a><span class="main-nav__separator"><span></span><span></span><span></span></span></li>
+									<li><a class="no-decoration" href="../shop.html">Shop</a></li>
 								</ul>
 								<div class="search-form-modal transition">
 									<form class="navbar-form header_search_form">
 										<i class="fa fa-times search-form_close"></i>
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Поиск">
+											<input type="text" class="form-control" placeholder="Search">
 										</div>
-										<button type="submit" class="btn btn_search customBgColor">Поиск</button>
+										<button type="submit" class="btn btn_search customBgColor">Search</button>
 									</form>
 								</div>
 							</div>
@@ -140,120 +169,118 @@
 			</div>
 		</nav><!--top-nav-->
 
-		<section id="header-top" class="sliders sliders--home">
+		<section class="sliders sliders--home">
 			<ul class="sliders__main js-slider-main slider enable-bx-slider" data-auto="true" data-auto-hover="true" data-mode="fade" data-pager="false" data-pager-custom="null" data-prev-selector="null" data-next-selector="null">
-                <li>
-                    <img src="media/sliders/2.jpeg" alt="bxSlider" />
-                    <div class="sliders__text">
-                        <h2>Километры не важны — важна надежная доставка.</h2>
-                        <h3>Перевозим с точностью и уверенностью.<span class="line line--slider"><span class="line__first"></span><span class="line__second"></span></span></h3>
-                        <p>Мы работаем 24/7, чтобы ваш груз всегда прибыл вовремя.
-                            Систем Лоджикс — это надежность, оперативность и профессионализм в каждой перевозке.</p>
-                        <a href="item.html" class="btn button button--transparent">LEARN MORE</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="media/sliders/3.jpg" alt="bxSlider" />
-                    <div class="sliders__text">
-                        <h2>долго дорого некачественно</h2>
-                        <h3>мы не платим<span class="line line--slider"><span class="line__first"></span><span class="line__second"></span></span></h3>
-                        <p>Мы работаем 24/7, чтобы ваш груз всегда прибыл вовремя.
-                            Систем Лоджикс — это надежность, оперативность и профессионализм в каждой перевозке.</p>
-                        <a href="item.html" class="btn button button--transparent">LEARN MORE</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="media/sliders/4.jpg" alt="bxSlider" />
-                    <div class="sliders__text">
-                        <h2>Долго дорого некачественно</h2>
-                        <h3>мы не платим<span class="line line--slider"><span class="line__first"></span><span class="line__second"></span></span></h3>
-                        <p>Мы работаем 24/7, чтобы ваш груз всегда прибыл вовремя.
-                            System Logistics — это надежность, оперативность и профессионализм в каждой перевозке.</p>
-                        <a href="item.html" class="btn button button--transparent">LEARN MORE</a>
-                    </div>
-                </li>
-                <li>
-                    <img src="media/sliders/5.webp" alt="bxSlider" />
-                    <div class="sliders__text">
-                        <h2>Долго дорого некачественно</h2>
-                        <h3>мы не платим<span class="line line--slider"><span class="line__first"></span><span class="line__second"></span></span></h3>
-                        <p>Мы работаем 24/7, чтобы ваш груз всегда прибыл вовремя.
-                            System Logistics — это надежность, оперативность и профессионализм в каждой перевозке.</p>
-                        <a href="item.html" class="btn button button--transparent">LEARN MORE</a>
-                    </div>
-                </li>
+				<li>
+					<img src="../media/sliders/slider2.jpg" alt="bxSlider" />
+					<div class="sliders__text">
+						<h2>our customers are enjoying</h2>
+						<h3>outstanding rides<span class="line line--slider"><span class="line__first"></span><span class="line__second"></span></span></h3>
+						<p>Donec ac nisi eget sem ultrices tempus. Phasellus et sem quis
+							felis pharetra convallis nulla sem nullam variu.</p>
+						<a href="../item.html" class="btn button button--red triangle">LEARN MORE</a>
+					</div>
+				</li>
+				<li>
+					<img src="../media/sliders/slider8.jpg" alt="bxSlider" />
+					<div class="sliders__text">
+						<h2>our customers are enjoying</h2>
+						<h3>outstanding rides<span class="line line--slider"><span class="line__first"></span><span class="line__second"></span></span></h3>
+						<p>Donec ac nisi eget sem ultrices tempus. Phasellus et sem quis
+							felis pharetra convallis nulla sem nullam variu.</p>
+						<a href="../item.html" class="btn button button--red triangle">LEARN MORE</a>
+					</div>
+				</li>
+				<li>
+					<img src="../media/sliders/slider6.jpg" alt="bxSlider" />
+					<div class="sliders__text">
+						<h2>our customers are enjoying</h2>
+						<h3>outstanding rides<span class="line line--slider"><span class="line__first"></span><span class="line__second"></span></span></h3>
+						<p>Donec ac nisi eget sem ultrices tempus. Phasellus et sem quis
+							felis pharetra convallis nulla sem nullam variu.</p>
+						<a href="../item.html" class="btn button button--red triangle">LEARN MORE</a>
+					</div>
+				</li>
+				<li>
+					<img src="../media/sliders/slider10.jpg" alt="bxSlider" />
+					<div class="sliders__text">
+						<h2>our customers are enjoying</h2>
+						<h3>outstanding rides<span class="line line--slider"><span class="line__first"></span><span class="line__second"></span></span></h3>
+						<p>Donec ac nisi eget sem ultrices tempus. Phasellus et sem quis
+							felis pharetra convallis nulla sem nullam variu.</p>
+						<a href="../item.html" class="btn button button--red triangle">LEARN MORE</a>
+					</div>
+				</li>
 			</ul>
 		</section><!--sliders-->
 
-<!--		<div class="biker-club-we">-->
-<!--			<section class="biker-club">-->
-<!--				<div class="container">-->
-<!--					<div class="biker-club__main biker-club__main&#45;&#45;home2 line-down triangle  triangle&#45;&#45;big">-->
-<!--						<div class="row">-->
-<!--							<div class="col-sm-4 col-xs-12 wow fadeInLeft" data-wow-delay="0.7s" data-wow-duration="1.5s">-->
-<!--								<div class="biker-club__upcoming">-->
-<!--									<h2 class="title"><span class="title__bold">BIKERS</span>Club</h2>-->
-<!--									<h3 class="title-space">UPCOMING EVENTS</h3>-->
-<!--									<p class="text">Nunc molestie sapien tempor placerat aliquam-->
-<!--										eget leo. Curabitur lectus. Suspendisse dapibus-->
-<!--										consectet mauris. Aliquam urna dolor.</p>-->
-<!--									<a href="article.html" class="button btn button&#45;&#45;main button&#45;&#45;transparent">UPCOMING EVENTS</a>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--							<div class="col-sm-8 col-xs-12 wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="1.5s">-->
-<!--								<div class="event">-->
-<!--									<div class="row row&#45;&#45;no-padding">-->
-<!--										<div class="col-xs-6">-->
-<!--											<div class="event__info clearfix">-->
-<!--												<h3 class="event__title">Bike Sportshow Event</h3>-->
-<!--												<div class="event__time">Kansas City <span>|</span>  1 Day</div>-->
-<!--												<div class="event__addr-date clearfix"><span class="fa fa-map-marker"></span>Hill Roe Bartle Hall, Kansas City,<br /> Missouri, USA</div>-->
-<!--												<div class="event__addr-date clearfix"><span class="fa fa-calendar-o"></span>Sunday, March 29, 2015</div>-->
-<!--												<a class="button btn button&#45;&#45;red button&#45;&#45;main pull-right">BUY TICKETS</a>-->
-<!--											</div>-->
-<!--										</div>-->
-<!--										<div class="col-xs-6">-->
-<!--											<div class="event__img">-->
-<!--												<img src="media/370x280/event2.jpg" class="img-responsive" alt="event" />-->
-<!--											</div>-->
-<!--										</div>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--			</section>&lt;!&ndash;biker-club&ndash;&gt;-->
+		<section class="biker-club">
+			<div class="container">
+				<div class="biker-club__main line-down triangle triangle--big">
+					<div class="row">
+						<div class="col-sm-4 col-xs-12 wow fadeInLeft" data-wow-delay="0.7s" data-wow-duration="1.5s">
+							<div class="biker-club__upcoming">
+								<h2 class="title"><span class="title__bold">BIKERS</span>Club</h2>
+								<h3 class="title-space">UPCOMING EVENTS</h3>
+								<p class="text">Nunc molestie sapien tempor placerat aliquam
+									eget leo. Curabitur lectus. Suspendisse dapibus
+									consectet mauris. Aliquam urna dolor.</p>
+								<a href="../article.html" class="button btn button--main button--grey">UPCOMING EVENTS</a>
+							</div>
+						</div>
+						<div class="col-sm-8 col-xs-12 wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="1.5s">
+							<div class="event">
+								<div class="row row--no-padding">
+									<div class="col-xs-6">
+										<div class="event__info clearfix">
+											<h3 class="event__title">Bike Sportshow Event</h3>
+											<div class="event__time">Kansas City <span>|</span>  1 Day</div>
+											<div class="event__addr-date clearfix"><span class="fa fa-map-marker"></span>Hill Roe Bartle Hall, Kansas City,<br /> Missouri, USA</div>
+											<div class="event__addr-date clearfix"><span class="fa fa-calendar-o"></span>Sunday, March 29, 2015</div>
+											<a class="button btn button--red button--main pull-right">BUY TICKETS</a>
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="event__img">
+											<img src="../media/370x280/event.jpg" class="img-responsive" alt="event" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--biker-club-->
 
-<!--			<section class="we-are we-are&#45;&#45;home we-are&#45;&#45;home2">-->
-<!--				<div class="container">-->
-<!--					<h2 class="title title&#45;&#45;main wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1.5s">We Are The<span class="title__bold">Biker</span>Club<span class="line line&#45;&#45;small"><span class="line__first"></span><span class="line__second"></span></span></h2>-->
-<!--					<p class="text text&#45;&#45;anons wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1.5s">Nullam ac velit. Fusce consequat ipsum non ipsum. Nam ullamcorper ipsum quis erat. Aliquam non elit. In vitae dui sagittis cursus. Duis convallis rutrum mauris. Maecenas eu neque lacinia.</p>-->
-<!--				</div>-->
-<!--			</section>&lt;!&ndash;we-are&ndash;&gt;-->
-<!--		</div>&lt;!&ndash;biker-club-we&ndash;&gt;-->
+		<section class="we-are we-are--home">
+			<div class="container">
+				<h2 class="title title--main wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1.5s">We Are The<span class="title__bold">Biker</span>Club<span class="line line--title"><span class="line__first"></span><span class="line__second"></span></span></h2>
+				<p class="text text--anons wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1.5s">Nullam ac velit. Fusce consequat ipsum non ipsum. Nam ullamcorper ipsum quis erat. Aliquam non elit. In vitae dui sagittis cursus. Duis convallis rutrum mauris. Maecenas eu neque lacinia.</p>
+			</div>
+		</section><!--we-are-->
 
 		<div class="images">
 			<div class="row row--no-padding">
 				<div class="col-xs-4 wow fadeInLeft" data-wow-delay="0.7s" data-wow-duration="1.5s">
 					<div class="images__one">
-						<img src="media/530x360/bike1.jpg" class="img-responsive" alt="bike"/>
+						<img src="../media/530x360/bike1.jpg" class="img-responsive" alt="bike"/>
 					</div>
 				</div>
 				<div class="col-xs-4 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1.5s">
 					<div class="images__one">
-						<img src="media/530x360/bike2.jpg" class="img-responsive" alt="bike"/>
+						<img src="../media/530x360/bike2.jpg" class="img-responsive" alt="bike"/>
 					</div>
 				</div>
 				<div class="col-xs-4 wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="1.5s">
 					<div class="images__one">
-						<img src="media/530x360/bike3.jpg" class="img-responsive" alt="bike"/>
+						<img src="../media/530x360/bike3.jpg" class="img-responsive" alt="bike"/>
 					</div>
 				</div>
 			</div>
 		</div><!--images-->
 
-		<section class='info-blocks info-blocks--home2'>
+		<section class='info-blocks'>
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-6 wow fadeInLeft" data-wow-delay="0.7s" data-wow-duration="1.5s">
@@ -262,7 +289,7 @@
 							<p class="text">Nunc molestie sapien tempor placerat Cras et lectus. Etiam sit amet turpis susp
 								endisse et erat. Ut proin a ipsum vitae orci porta tristique nam. Lorem ipsum do
 								lor sit amet consectetur adipisicing elit sed do eiusmod.</p>
-							<a href="article.html" class="btn button  button--transparent button--main">Read More</a>
+							<a href="../article.html" class="btn button button--red button--main">Read More</a>
 						</div>
 					</div>
 					<div class="col-xs-6 wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="1.5s">
@@ -270,16 +297,15 @@
 							<h3 class="title title--block"><span class="title__bold">BUILDING</span>YourBrand</h3>
 							<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nost
 								ud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-							<a href="article.html" class="btn button button--transparent button--main">Read More</a>
+							<a href="../article.html" class="btn button button--red button--main">Read More</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section><!--info-blocks-->
 
-		<section class="numbers numbers--home numbers--home2">
+		<div class="numbers numbers--home">
 			<div class="container">
-				<h3 class="hidden">Title</h3>
 				<div class="clearfix percent-blocks" data-waypoint-scroll="true">
 					<div class="numbers__one">
 						<header class="numbers__head">
@@ -333,11 +359,10 @@
 					</div>
 				</div>
 			</div>
-		</section><!--numbers-->
+		</div><!--numbers-->
 
-		<section class="home-reviews dark-bg">
+		<div class="home-reviews dark-bg">
 			<div class="container">
-				<h3 class="hidden">Title</h3>
 				<div class="home-reviews__quote triangle triangle--services"><span class="fa  fa-quote-right"></span></div>
 				<div class="owl-carousel js-home-reviews enable-owl-carousel" data-auto-play="5000" data-stop-on-hover="true" data-items="2" data-pagination="true" data-navigation="false" data-items-desktop="2" data-items-desktop-small="2" data-items-tablet="1" data-items-tablet-small="1" >
 					<div>
@@ -410,17 +435,17 @@
 					</div>
 				</div>
 			</div>
-		</section><!--home-reviews-->
+		</div><!--home-reviews-->
 
-		<section class="services services--home2">
+		<section class="services">
 			<div class="container">
 				<div class="services__main">
-					<h2 class="title title--main wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="1.5s"><span class="title__bold">Biker</span>ClubServices<span class="line line--small"><span class="line__first"></span><span class="line__second"></span></span></h2>
+					<h2 class="title title--main wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="1.5s"><span class="title__bold">Biker</span>ClubServices<span class="line line--title"><span class="line__first"></span><span class="line__second"></span></span></h2>
 					<p class="text text--anons wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="1.5s">Nullam ac velit. Fusce consequat ipsum non ipsum. Nam ullamcorper ipsum quis erat. Aliquam non elit. In vitae dui sagittis cursus. Duis convallis rutrum mauris. Maecenas eu neque lacinia.</p>
 					<div class="row">
 						<div class="col-sm-7 col-xs-12 wow fadeInLeft" data-wow-delay="0.7s" data-wow-duration="1.5s">
 							<div class="services__img">
-								<img class="img-responsive" src="media/motorcycles/motorcycle-red-home.jpg" alt="bike" />
+								<img class="img-responsive" src="../media/motorcycles/moto-red.png" alt="bike" />
 							</div>
 						</div>
 						<div class="col-sm-5 col-xs-12 wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="1.5s">
@@ -468,19 +493,19 @@
 			</div>
 		</section><!--services-->
 
-		<section class="listings listings--home2 dark-bg">
+		<section class="listings">
 			<div class="container">
 				<header class="tab-header clearfix wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1.5s">
-					<h2 class="title title--main pull-left"><span class="title__bold">Biker</span>ClubListings<span class="line line--small"><span class="line__first"></span><span class="line__second"></span></span></h2>
+					<h2 class="title title--main pull-left"><span class="title__bold">Biker</span>ClubListings<span class="line line--title"><span class="line__first"></span><span class="line__second"></span></span></h2>
 					<div class="tab-toggles pull-right js-isotope-btns">
-						<a href="#" class="button button--transparent button--main btn js-isotope-btn" data-sort-by="name">BY TYPE</a>
-						<a href="#" class="button button--transparent button--main btn button--active js-isotope-btn" data-sort-by='original-order'>BY NEWEST</a>
+						<a href="#" class="button button--grey button--main btn js-isotope-btn" data-sort-by="name">BY TYPE</a>
+						<a href="#" class="button button--grey button--main btn button--active js-isotope-btn" data-sort-by='original-order'>BY NEWEST</a>
 					</div>
 				</header>
 				<p class="text text--anons wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="1.5s">Nullam ac velit. Fusce consequat ipsum non ipsum. Nam ullamcorper ipsum quis erat. Aliquam non elit. In vitae dui sagittis cursus. Duis convallis rutrum mauris. Maecenas eu neque lacinia.</p>
 				<div class="row isotope">
 					<div class="col-md-3 col-xs-6 isotope-item wow fadeInLeft" data-wow-delay="0.7s" data-wow-duration="1.5s">
-						<a href="shop.html" class="listing-anons equal-height-item listing-anons--home triangle triangle--big line-down no-decoration">
+						<a href="../shop.html" class="listing-anons equal-height-item listing-anons--home triangle triangle--big line-down no-decoration">
 							<div class="listing-anons__img">
 								<img src="media/flux/listing1.jpg" class="img-responsive" alt="bike" />
 							</div>
@@ -494,7 +519,7 @@
 						</a>
 					</div>
 					<div class="col-md-3 col-xs-6 isotope-item wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1.5s">
-						<a href="shop.html" class="listing-anons equal-height-item listing-anons--home triangle triangle--big line-down no-decoration">
+						<a href="../shop.html" class="listing-anons equal-height-item listing-anons--home triangle triangle--big line-down no-decoration">
 							<div class="listing-anons__img">
 								<img src="media/flux/listing3.jpg" class="img-responsive" alt="bike" />
 							</div>
@@ -508,7 +533,7 @@
 						</a>
 					</div>
 					<div class="col-md-3 col-xs-6 isotope-item wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1.5s">
-						<a href="shop.html" class="listing-anons equal-height-item listing-anons--home triangle triangle--big line-down no-decoration">
+						<a href="../shop.html" class="listing-anons equal-height-item listing-anons--home triangle triangle--big line-down no-decoration">
 							<div class="listing-anons__img">
 								<img src="media/flux/listing4.jpg" class="img-responsive" alt="bike" />
 							</div>
@@ -522,7 +547,7 @@
 						</a>
 					</div>
 					<div class="col-md-3 col-xs-6 isotope-item wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="1.5s">
-						<a href="shop.html" class="listing-anons equal-height-item listing-anons--home triangle triangle--big line-down no-decoration">
+						<a href="../shop.html" class="listing-anons equal-height-item listing-anons--home triangle triangle--big line-down no-decoration">
 							<div class="listing-anons__img">
 								<img src="media/flux/listing2.jpg" class="img-responsive" alt="bike" />
 							</div>
@@ -546,13 +571,13 @@
 						<div class="blog__info">
 							<h2 class="title title--main"><span class="title__bold">BIKER</span>ClubBlog<span class="line line--small"><span class="line__second"></span><span class="line__first"></span></span></h2>
 							<p class="text">Nullam ac velit. Fusce consequat ipsum non ipsum. Nam ullamcorper ipsum quis erat am non sed ipsum elit.</p>
-							<a href="blog.html" class="button btn button--main button--red">VISIT BLOG</a>
+							<a href="../blog.html" class="button btn button--main button--red">VISIT BLOG</a>
 						</div>
 					</div>
 					<div class="col-lg-8 col-xs-12">
 						<div class="row row--no-padding">
 							<div class="col-sm-6 col-xs-12 wow fadeInDown" data-wow-delay="0.7s" data-wow-duration="1.5s">
-								<a href="article.html" class="blog-anons no-decoration">
+								<a href="../article.html" class="blog-anons no-decoration">
 									<div class="blog-anons__img">
 										<img src="media/flux/blog-anons1.jpg" class="img-responsive" alt="bike" />
 									</div>
@@ -568,7 +593,7 @@
 								</a>
 							</div>
 							<div class="col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="1.5s">
-								<a href="article.html" class="blog-anons no-decoration">
+								<a href="../article.html" class="blog-anons no-decoration">
 									<div class="blog-anons__img">
 										<img src="media/flux/blog-anons3.jpg" class="img-responsive" alt="bike" />
 									</div>
@@ -584,7 +609,7 @@
 								</a>
 							</div>
 							<div class="col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1.5s">
-								<a href="article.html" class="blog-anons no-decoration">
+								<a href="../article.html" class="blog-anons no-decoration">
 									<div class="blog-anons__img">
 										<img src="media/flux/blog-anons2.jpg" class="img-responsive" alt="bike" />
 									</div>
@@ -600,7 +625,7 @@
 								</a>
 							</div>
 							<div class="col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="1.5s">
-								<a href="article.html" class="blog-anons no-decoration">
+								<a href="../article.html" class="blog-anons no-decoration">
 									<div class="blog-anons__img">
 										<img src="media/flux/blog-anons4.jpg" class="img-responsive" alt="bike" />
 									</div>
@@ -621,36 +646,34 @@
 			</div>
 		</section><!--blog-->
 
-		<section class="partners partners--home2">
+		<section class="partners">
 			<div class="container">
-				<h2 class="title title--main wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1.5s"><span class="title__bold">Biker</span>Club'sTrustedPartners<span class="line line--small line--center"><span class="line__first"></span><span class="line__second"></span></span></h2>
+				<h2 class="title title--main wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1.5s"><span class="title__bold">Biker</span> Club's Trusted Partners<span class="line line--title line--center"><span class="line__first"></span><span class="line__second"></span></span></h2>
 				<p class="text--small wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1.5s">Nullam ac velit. Fusce consequat ipsum non ipsum. Nam ullamcorper ipsum quis erat. Aliquam non elit vitae
 					dui sagittis cursus. Duis convallis rutrum mauris. Maecenas eu neque lacinia.</p>
-				<div class="row brands">
+				<div class="row">
 					<div class="col-xs-10 col-xs-offset-1 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1.5s">
-						<div class="brands">
-							<div class="brand">
-								<img src="media/logos/luxe.png" alt="brand" />
-							</div>
-							<div class="brand">
-								<img src="media/logos/wuezon.png" alt="brand" />
-							</div>
-							<div class="brand">
-								<img src="media/logos/motox.png" alt="brand" />
-							</div>
-							<div class="brand">
-								<img src="media/logos/dna.png" alt="brand" />
-							</div>
-							<div class="brand">
-								<img src="media/logos/mint.png" alt="brand" />
-							</div>
+						<div class="brand">
+							<img src="../media/logos/luxe.png" alt="brand" />
+						</div>
+						<div class="brand">
+							<img src="../media/logos/wuezon.png" alt="brand" />
+						</div>
+						<div class="brand">
+							<img src="../media/logos/motox.png" alt="brand" />
+						</div>
+						<div class="brand">
+							<img src="../media/logos/dna.png" alt="brand" />
+						</div>
+						<div class="brand">
+							<img src="../media/logos/mint.png" alt="brand" />
 						</div>
 					</div>
 				</div>
 			</div>
 		</section><!--partners-->
 
-		<section class="signup signup--home2">
+		<section class="signup">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-5 col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.7s" data-wow-duration="1.5s">
@@ -660,7 +683,7 @@
 						</div>
 					</div>
 					<div class="col-lg-7 col-md-6 col-xs-12 wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="1.5s">
-						<form action="/" method="post" class="sign-form">
+						<form action="/public" method="post" class="sign-form">
 							<div class="relative-pos"><div class="input-triangle"></div><input class="sign-input" type="text" name="sign" placeholder="Enter your email address" /></div>
 							<button type="submit" class="btn button button--red button--sign triangle triangle--12">SUBSCRIBE</button>
 						</form>
@@ -674,9 +697,10 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-4 wow slideInLeft" data-wow-delay="0.7s" data-wow-duration="1.5s">
-							<a href="index.html" class="logo logo--home">
+							<a href="../index.html" class="logo logo--home">
 								<span class="logo__moto">
-									<svg version="1.1" id="svg-icon-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='50px' x="0px" y="0px" viewBox="0 0 337.227 337.227" style="enable-background:new 0 0 337.227 337.227;" xml:space="preserve">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='50px' x="0px" y="0px"
+										viewBox="0 0 337.227 337.227" style="enable-background:new 0 0 337.227 337.227;" xml:space="preserve">
 										<g>
 											<g>
 												<path d="M214.517,164.668c2.176-2.377,2.486-5.635,0.685-7.283c-1.795-1.643-5.015-1.05-7.19,1.327
@@ -773,7 +797,7 @@
 									et lectus. Etiam sit amet turpis. Suspendisse
 									se et erat. Proin a ipsum vitae orci port dom tristiq ue nam. Class aptent taciti sociosque sodales feugiat nulla lorem ipsum dolor ipsu
 									sit amet consectetur adipisicing.</p>
-								<a href="about.html" class="btn button button--red button--main">PURCHASE</a>
+								<a href="../about.html" class="btn button button--red button--main">PURCHASE</a>
 							</div>
 						</div>
 						<div class="col-md-3 col-xs-6 wow slideInUp" data-wow-delay="0.7s" data-wow-duration="1.5s">
@@ -782,21 +806,21 @@
 								<div class="footer-main-home__event clearfix">
 									<div class="event-num triangle pull-right">29</div>
 									<div class="footer-main-home__event-text">
-										<h3><a class="no-decoration" href="article.html">Annual Race Day</a></h3>
+										<h3><a class="no-decoration" href="../article.html">Annual Race Day</a></h3>
 										<p class="text text--footer-main-home">3 days Event. Starting March 29th</p>
 									</div>
 								</div>
 								<div class="footer-main-home__event clearfix">
 									<div class="event-num triangle pull-right">5</div>
 									<div class="footer-main-home__event-text">
-										<h3><a class="no-decoration"  href="article.html">Biker's Community Day</a></h3>
+										<h3><a class="no-decoration"  href="../article.html">Biker's Community Day</a></h3>
 										<p class="text text--footer-main-home">5 days Event. Starting April 5 , 9am</p>
 									</div>
 								</div>
 								<div class="footer-main-home__event clearfix">
 									<div class="event-num triangle pull-right">17</div>
 									<div class="footer-main-home__event-text">
-										<h3><a class="no-decoration"  href="article.html">Win 5 Bikes Event</a></h3>
+										<h3><a class="no-decoration"  href="../article.html">Win 5 Bikes Event</a></h3>
 										<p class="text text--footer-main-home">1 days Event on April 17th 2015</p>
 									</div>
 								</div>
@@ -807,36 +831,36 @@
 								<h2 class="footer-main-home__title">Flickr Feed</h2>
 								<div class="row row--no-padding">
 									<div class="col-xs-4">
-										<a href="#"><img class="img-responsive" alt="bike" src="media/80x80/footer1.jpg" /></a>
+										<a href="#"><img class="img-responsive" alt="bike" src="../media/80x80/footer1.jpg" /></a>
 									</div>
 									<div class="col-xs-4">
-										<a href="#"><img class="img-responsive" alt="bike" src="media/80x80/footer2.jpg" /></a>
+										<a href="#"><img class="img-responsive" alt="bike" src="../media/80x80/footer2.jpg" /></a>
 									</div>
 									<div class="col-xs-4">
-										<a href="#"><img class="img-responsive" alt="bike" src="media/80x80/footer3.jpg" /></a>
+										<a href="#"><img class="img-responsive" alt="bike" src="../media/80x80/footer3.jpg" /></a>
 									</div>
 									<div class="col-xs-4">
-										<a href="#"><img class="img-responsive" alt="bike" src="media/80x80/footer4.jpg" /></a>
+										<a href="#"><img class="img-responsive" alt="bike" src="../media/80x80/footer4.jpg" /></a>
 									</div>
 									<div class="col-xs-4">
-										<a href="#"><img class="img-responsive" alt="bike" src="media/80x80/footer5.jpg" /></a>
+										<a href="#"><img class="img-responsive" alt="bike" src="../media/80x80/footer5.jpg" /></a>
 									</div>
 									<div class="col-xs-4">
-										<a href="#"><img class="img-responsive" alt="bike" src="media/80x80/footer6.jpg" /></a>
+										<a href="#"><img class="img-responsive" alt="bike" src="../media/80x80/footer6.jpg" /></a>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-3 col-xs-6 wow slideInRight" data-wow-delay="0.7s" data-wow-duration="2.5s">
-							<address class="footer-main-home__block equal-height-item">
-								<div class="footer-main-home__title">Contact info</div>
+							<div class="footer-main-home__block equal-height-item">
+								<h2 class="footer-main-home__title">Contact info</h2>
 								<div class="phone">(100) 987 6540</div>
-								<div class="footer-main-home__address-title">Club Address</div>
+								<h5 class="footer-main-home__address-title">Club Address</h5>
 								<p class="text text--footer-main-home">3638 Ground Avenue, Hill Station,<br />
 									Hollywood CA 00765<br />
 									USA</p>
 								<div class="email"><span>Email: </span>hello@bikesclub.com</div>
-							</address>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -852,32 +876,32 @@
 			<a id="to-top" href="#header-top"><i class="fa fa-chevron-up"></i></a>
 		</footer><!--home-footer-->
 		<!--Main-->   
-		<script src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/modernizr.custom.js"></script>
-		<!--Counter-->
-		<script src="assets/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
-		<script src="js/waypoints.min.js"></script>
-		<script src="js/jquery.easypiechart.min.js"></script>
-		<script src="js/classie.js"></script>
-		<!--Switcher-->
-		<script src="assets/switcher/js/switcher.js"></script>		
-		<!--Owl Carousel-->
-		<script src="assets/owl-carousel/owl.carousel.min.js"></script>		
-		<!--bxSlider-->
-		<script src="assets/bxslider/jquery.bxslider.min.js"></script>		
-		<!-- jQuery UI Slider -->
-		<script src="assets/slider/jquery.ui-slider.js"></script>		
-		<!--Isotope-->
-		<script src="assets/isotope/isotope.js"></script>
-		<!--Slider-->
-		<script src="assets/slider/jquery.ui-slider.js"></script>		
-		<!--Fancybox-->
-		<script src="assets/fancybox/jquery.fancybox.pack.js"></script>
-		<!--Theme-->
-		<script src="js/jquery.smooth-scroll.js"></script>
-		<script src="js/wow.min.js"></script>
-		<script src="js/jquery.placeholder.min.js"></script>
-		<script src="js/theme.js"></script>
+<!--		<script src="/js/jquery-1.11.3.min.js"></script>-->
+<!--		<script src="/js/bootstrap.min.js"></script>-->
+<!--		<script src="/js/modernizr.custom.js"></script>-->
+<!--		&lt;!&ndash;Counter&ndash;&gt;-->
+<!--		<script src="/assets/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js"></script>-->
+<!--		<script src="/js/waypoints.min.js"></script>-->
+<!--&lt;!&ndash;		<script src="/js/jquery.easypiechart.min.js"></script>&ndash;&gt;-->
+<!--		<script src="/js/classie.js"></script>-->
+<!--		&lt;!&ndash;Switcher&ndash;&gt;-->
+<!--		<script src="/assets/switcher/js/switcher.js"></script>-->
+<!--		&lt;!&ndash;Owl Carousel&ndash;&gt;-->
+<!--		<script src="/assets/owl-carousel/owl.carousel.min.js"></script>-->
+<!--		&lt;!&ndash;bxSlider&ndash;&gt;-->
+<!--		<script src="/assets/bxslider/jquery.bxslider.min.js"></script>-->
+<!--		&lt;!&ndash; jQuery UI Slider &ndash;&gt;-->
+<!--		<script src="/assets/slider/jquery.ui-slider.js"></script>-->
+<!--		&lt;!&ndash;Isotope&ndash;&gt;-->
+<!--		<script src="/assets/isotope/isotope.js"></script>-->
+<!--		&lt;!&ndash;Slider&ndash;&gt;-->
+<!--		<script src="/assets/slider/jquery.ui-slider.js"></script>-->
+<!--		&lt;!&ndash;Fancybox&ndash;&gt;-->
+<!--		<script src="/assets/fancybox/jquery.fancybox.pack.js"></script>-->
+<!--		&lt;!&ndash;Theme&ndash;&gt;-->
+<!--		<script src="/js/jquery.smooth-scroll.js"></script>-->
+<!--		<script src="/js/wow.min.js"></script>-->
+<!--		<script src="/js/jquery.placeholder.min.js"></script>-->
+<!--		<script src="/js/theme.js"></script>-->
 	</body>
 </html>
