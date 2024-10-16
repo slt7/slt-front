@@ -681,7 +681,7 @@
         transition: none !important;
     }
 }
-}
+
 /*480-599*/
 
 /*320-479*/
@@ -829,16 +829,16 @@
     .row--items > div{
         width:100%;
     }
-    .navbar-main-slide {
-        padding: 10px 0;
-        text-align: center;
-    }
+
 
     .navbar-toggle {
         display: block;
         margin: 0 auto;
     }
-
+    img {
+        max-width: 100%;
+        height: auto;
+    }
     .navbar-nav-menu {
         display: none; /* по умолчанию скрыто, пока не нажмут кнопку */
         flex-direction: column;
