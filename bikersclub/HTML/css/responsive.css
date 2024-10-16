@@ -48,40 +48,6 @@
     .sliders__text p{
         margin-bottom: 30px;
     }
-    .navbar-main-slide {
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    .navbar-toggle {
-        display: none; /* Скрываем гамбургер, так как на большом экране он не нужен */
-    }
-
-    .navbar-nav-menu {
-        display: flex; /* Меню отображается горизонтально */
-        justify-content: center;
-    }
-
-    .navbar-nav-menu li {
-        display: inline-block;
-        margin: 0 15px;
-    }
-
-    .navbar-nav-menu li a {
-        font-size: 20px;
-        padding: 15px;
-    }
-
-    .main-nav__separator {
-        display: inline-block; /* Отображаем разделители между пунктами меню */
-        margin-left: 10px;
-    }
-
-    /* Отключение анимаций */
-    * {
-        animation: none !important;
-        transition: none !important;
-    }
 }
 /*1170-1470*/
 
@@ -271,41 +237,6 @@
     .shop-item-desc{
         margin-bottom: 40px;
     }
-    .navbar-main-slide {
-        padding: 15px 0;
-        text-align: center;
-    }
-
-    .navbar-toggle {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .navbar-nav-menu {
-        display: none; /* скрыто по умолчанию */
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-nav-menu li {
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .navbar-nav-menu li a {
-        font-size: 18px;
-        padding: 15px;
-    }
-
-    .main-nav__separator {
-        display: none; /* убираем разделители между пунктами меню */
-    }
-
-    .navbar-toggle.collapsed + .navbar-nav-menu {
-        display: flex; /* показываем меню при нажатии на гамбургер */
-    }
 }
 /*768-991*/
 
@@ -435,46 +366,6 @@
     }
     .sliders__text{
 		display: none;
-    }
-    .navbar-main-slide {
-        padding: 10px 0;
-        text-align: center;
-    }
-
-    .navbar-toggle {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .navbar-nav-menu {
-        display: none; /* скрыто по умолчанию */
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-nav-menu li {
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .navbar-nav-menu li a {
-        font-size: 16px;
-        padding: 15px;
-    }
-
-    .main-nav__separator {
-        display: none; /* убираем разделители между пунктами меню */
-    }
-
-    .navbar-toggle.collapsed + .navbar-nav-menu {
-        display: flex; /* показываем меню при нажатии на гамбургер */
-    }
-
-    * {
-        animation: none !important;
-        transition: none !important;
     }
 }
 /*600-767*/
@@ -639,49 +530,7 @@
     .row--items > div{
         width:50%;
     }
-    .navbar-main-slide {
-        padding: 10px 0;
-        text-align: center;
-    }
-
-    .navbar-toggle {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .navbar-nav-menu {
-        display: none; /* по умолчанию скрыто, пока не нажмут кнопку */
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-nav-menu li {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .navbar-nav-menu li a {
-        font-size: 15px;
-        padding: 12px;
-    }
-
-    .main-nav__separator {
-        display: none; /* скрыть разделители между пунктами меню для маленьких экранов */
-    }
-
-    .navbar-toggle.collapsed + .navbar-nav-menu {
-        display: flex; /* показать меню, когда нажат переключатель */
-    }
-
-    /* Отключение анимации */
-    * {
-        animation: none !important;
-        transition: none !important;
-    }
 }
-
 /*480-599*/
 
 /*320-479*/
@@ -828,63 +677,5 @@
     
     .row--items > div{
         width:100%;
-    }
-
-
-    .navbar-toggle {
-        display: block;
-        margin: 0 auto;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    .navbar-nav-menu {
-        display: none; /* по умолчанию скрыто, пока не нажмут кнопку */
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-nav-menu li {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .navbar-nav-menu li a {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .main-nav__separator {
-        display: none; /* скрыть разделители между пунктами меню для маленьких экранов */
-    }
-
-    .navbar-toggle.collapsed + .navbar-nav-menu {
-        display: flex; /* показать меню, когда нажат переключатель */
-    }
-    /* Отключение CSS-анимаций и переходов для маленьких экранов */
-    * {
-        animation: none !important;
-        transition: none !important;
-    }
-
-    /* Дополнительно, если есть определенные классы с анимациями */
-    .sliders__text,
-    .anons__block,
-    .we-are__block,
-    .numbers__one,
-    .review__text,
-    .brand,
-    .event__info {
-        animation: none !important;
-        transition: none !important;
-    }
-
-    /* Если есть анимации картинок или других элементов, их тоже можно отключить */
-    img {
-        animation: none !important;
-        transition: none !important;
     }
 }
