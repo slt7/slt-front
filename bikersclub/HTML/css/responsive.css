@@ -372,6 +372,12 @@
 
 /*480-599*/
 @media screen and (max-width:599px){
+    .top-nav__main{
+        padding: 35px 0 35px 0 !important;
+        margin-bottom: -5px !important;
+        z-index:2000 !important;
+        position: relative !important;
+    }
     .top-header__main > .row > div{
         width:100%;
     }
@@ -535,6 +541,12 @@
 
 /*320-479*/
 @media screen and (max-width:479px){
+    .top-nav__main{
+        padding: 35px 0 35px 0 !important;
+        margin-bottom: -5px !important;
+        z-index:2000 !important;
+        position: relative !important;
+    }
     .header-contacts__one{
         display:block;
         margin: 0 auto 10px auto;

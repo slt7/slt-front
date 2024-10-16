@@ -122,6 +122,13 @@ html {
     text-decoration: none;
 }
 
+/*.top-nav__main{*/
+/*    padding: 35px 0 35px 0;*/
+/*    margin-bottom: -5px;*/
+/*    z-index:2000;*/
+/*    position: relative;*/
+/*}*/
+
 .top-nav__main{
     position: fixed;
     top: 0;
