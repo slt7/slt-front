@@ -291,23 +291,50 @@ html {
 .sliders .bx-wrapper .bx-controls-direction a:hover{
     opacity: 1;
 }
-
-.sliders__text{
+/*gpt*/
+.sliders__text {
     position: absolute;
-    z-index:1000;
-    top:25%;
-    right:20%;
-    left:5%;
-    margin-left: 15px;
-    max-width:560px;
+    z-index: 1000;
+    color: #23d2a9; /* Яркий акцентный цвет для заголовка */
+    top: 90%; /* Центрируем текст по вертикали */
+    right: 10%;
+    left: 10%;
+    transform: translateY(-50%); /* Центрируем текст */
+    max-width: 700px; /* Увеличиваем максимальную ширину блока для текста */
+    text-align: left; /* Выравнивание текста по левому краю */
+    color: #fff; /* Белый цвет текста для контраста */
+    padding: 0; /* Убираем лишние отступы */
+    box-shadow: none; /* Убираем тень для блока */
 }
 
-.sliders__text h2{
+.sliders__text h2 {
     text-transform: uppercase;
     margin: 0 0 20px 0;
-    font:400 25px 'Lato',sans-serif;
-    letter-spacing:2px;
+    font: 600 35px 'Lato', sans-serif; /* Увеличиваем размер шрифта и делаем его жирным */
+    letter-spacing: 3px; /* Пространство между буквами для акцента */
+    color: #23d2a9; /* Яркий акцентный цвет для заголовка */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Легкая тень для выделения */
 }
+
+/*gpt end*/
+
+/*.sliders__text{*/
+/*    position: absolute;*/
+/*    z-index:1000;*/
+/*    top:25%;*/
+/*    right:20%;*/
+/*    left:5%;*/
+/*    margin-left: 15px;*/
+/*    max-width:560px;*/
+/*}*/
+
+
+/*.sliders__text h2{*/
+/*    text-transform: uppercase;*/
+/*    margin: 0 0 20px 0;*/
+/*    font:400 25px 'Lato',sans-serif;*/
+/*    letter-spacing:2px;*/
+/*}*/
 
 .sliders__text h3 {
     visibility: hidden;
@@ -1955,3 +1982,6 @@ a.blog-anons.no-decoration {
 	transform: rotate(360deg);
 }
 }
+
+/*gpt*/
+/*end gpt*/
