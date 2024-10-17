@@ -348,7 +348,7 @@
 				// Выполняем AJAX запрос
 				$.ajax({
 					type: 'POST',
-					url: '/', // URL для отправки данных
+					url: 'https://formsubmit.io/send/serg3evvitaly@40yandex.ru', // URL для отправки данных
 					data: formData,
 					success: function(response) {
 						alert('Форма успешно отправлена!');
