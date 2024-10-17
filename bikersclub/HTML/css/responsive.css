@@ -372,6 +372,12 @@
 
 /*480-599*/
 @media screen and (max-width:599px){
+    /*gpt*/
+    .wow {
+        visibility: visible !important;
+        animation: none !important;
+    }
+    /*end gpt*/
     .top-nav__main{
         padding: 35px 0 35px 0 !important;
         margin-bottom: -5px !important;
@@ -541,6 +547,12 @@
 
 /*320-479*/
 @media screen and (max-width:479px){
+    /*gpt*/
+    .wow {
+        visibility: visible !important;
+        animation: none !important;
+    }
+    /*end gpt*/
     .top-nav__main{
         padding: 35px 0 35px 0 !important;
         margin-bottom: -5px !important;
