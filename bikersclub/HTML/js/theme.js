@@ -339,26 +339,26 @@
 			});
 		},
 
-		handleFormSubmit: function() {
-			$('.quick-form').on('submit', function(event) {
-				event.preventDefault(); // Останавливаем стандартное поведение формы
-
-				var formData = $(this).serialize(); // Собираем данные формы
-
-				// Выполняем AJAX запрос
-				$.ajax({
-					type: 'POST',
-					url: 'https://formsubmit.io/send/serg3evvitaly@40yandex.ru', // URL для отправки данных
-					data: formData,
-					success: function(response) {
-						alert('Форма успешно отправлена!');
-					},
-					error: function() {
-						alert('Произошла ошибка при отправке формы.');
-					}
-				});
-			});
-		}
+		// handleFormSubmit: function() {
+		// 	$('.quick-form').on('submit', function(event) {
+		// 		event.preventDefault(); // Останавливаем стандартное поведение формы
+		//
+		// 		var formData = $(this).serialize(); // Собираем данные формы
+		//
+		// 		// Выполняем AJAX запрос
+		// 		$.ajax({
+		// 			type: 'POST',
+		// 			url: 'https://getform.io/f/bqonxrgbl', // URL для отправки данных
+		// 			data: formData,
+		// 			success: function(response) {
+		// 				alert('Форма успешно отправлена!');
+		// 			},
+		// 			error: function() {
+		// 				alert('Произошла ошибка при отправке формы.');
+		// 			}
+		// 		});
+		// 	});
+		// }
 	};
 
 
