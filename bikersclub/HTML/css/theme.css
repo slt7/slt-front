@@ -129,14 +129,18 @@ html {
 /*    position: relative;*/
 /*}*/
 
-.top-nav__main{
+.top-nav__main {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 15px 30px;
+    padding: 15px 30px; /* Отступы обеспечат внутреннее пространство */
     width: 100%;
     margin-bottom: -5px;
-    z-index:2000;
+    z-index: 2000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .logo{
