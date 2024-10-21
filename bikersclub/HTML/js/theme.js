@@ -9,6 +9,10 @@
 
 	"use strict";
 
+	const nameClientBid = document.getElementById('name_client_bid')
+	const phoneInputBid = document.getElementById('tel_client_bid')
+	const comment = document.getElementById('comment_client_bid')
+
 	var Core = {
 
 		initialized: false,
@@ -339,26 +343,51 @@
 			});
 		},
 
-		// handleFormSubmit: function() {
-		// 	$('.quick-form').on('submit', function(event) {
-		// 		event.preventDefault(); // Останавливаем стандартное поведение формы
-		//
-		// 		var formData = $(this).serialize(); // Собираем данные формы
-		//
-		// 		// Выполняем AJAX запрос
-		// 		$.ajax({
-		// 			type: 'POST',
-		// 			url: 'https://getform.io/f/bqonxrgbl', // URL для отправки данных
-		// 			data: formData,
-		// 			success: function(response) {
-		// 				alert('Форма успешно отправлена!');
-		// 			},
-		// 			error: function() {
-		// 				alert('Произошла ошибка при отправке формы.');
-		// 			}
-		// 		});
-		// 	});
-		// }
+		// const nameClientBid = document.getElementById('name_client_bid')
+		// const phoneInputBid = document.getElementById('tel_client_bid')
+		// const comment = document.getElementById('comment_client_bid')
+
+		handleFormSubmit: function() {
+			$('.quick-form').on('submit', function(event) {
+				event.preventDefault(); // Останавливаем стандартное поведение формы
+
+				// let formData = $(this).serialize(); // Собираем данные формы
+				// Выполняем AJAX запрос
+				// $.ajax({
+				// 	type: 'POST',
+				// 	url: 'https://kings-logix.ru/api/main/sendNotification', // URL для отправки данных
+				// 	data: JSON.stringify(formData),
+				// 	success: function(response) {
+				// 		alert('Форма успешно отправлена!');
+				// 	},
+				// 	error: function() {
+				// 		alert('Произошла ошибка при отправке формы.');
+				// 	}
+				// });
+
+				function sendBid(url, body) {
+					fetch(url, {
+						method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)
+					}).then(response => {
+						if (!response.ok) {
+							return response.json().then(err => {
+								throw err
+							});
+						}
+						return response.json();
+					})
+				}
+				const url = 'https://kings-logix.ru/api/main/sendNotification'
+				let formData = {
+					name_client: nameClientBid.value,
+					phone_number: phoneInputBid.value,
+					comment: comment.value,
+					call_back: true
+				}
+				console.log(formData)
+				sendBid(url, formData)
+			});
+		}
 	};
 
 
