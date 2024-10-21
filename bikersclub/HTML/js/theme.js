@@ -376,6 +376,18 @@
 						}
 						return response.json();
 					})
+						.then(data => {
+							const submitButton = document.querySelector('.btn.button--main');
+							submitButton.textContent = 'Отправлено';
+							submitButton.classList.add('disabled');   // Блокируем кнопку
+
+							// Очищаем поля формы
+							document.getElementById('name_client_bid').value = '';
+							document.getElementById('tel_client_bid').value = '';
+							document.getElementById('comment_client_bid').value = '';
+						}).catch(error => {
+						console.error('Ошибка:', error);
+					});
 				}
 				const url = 'https://kings-logix.ru/api/main/sendNotification'
 				let formData = {
@@ -393,6 +405,6 @@
 
 	Core.initialize();
 	$(document).ready(function(){
-		$('#phone').mask('+7 (999) 999-9999');
+		$('#tel_client_bid').mask('+7 (999) 999-9999');
 	});
 })();

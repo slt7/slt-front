@@ -289,3 +289,13 @@ ul.demopage-help_list li a i{
 		padding: 81px 0px 0;
 	}
 }
+
+btn.disabled {
+	pointer-events: none; /* Отключаем нажатие на кнопку */
+	cursor: default; /* Изменяем курсор на обычный */
+	transition: background-color 0.4s, color 0.4s;
+}
+
+.btn.button--main {
+	transition: background-color 0.4s, color 0.4s;
+}
