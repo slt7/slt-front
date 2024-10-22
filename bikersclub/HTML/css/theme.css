@@ -482,14 +482,14 @@ html {
 }
 
 .we-are{
-    padding: 120px 0 100px 0;
+    padding: 40px 0 100px 0;
 }
 
 .title--main{
     font-size:36px;
     position: relative;
     padding-bottom: 35px;
-    margin:0 0 45px 0;
+    margin:0 0 0 0;
 }
 
 .line--title{
@@ -510,7 +510,7 @@ html {
 .text--anons{
     font:300 20px 'Lato',sans-serif;
     line-height:1.5;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 }
 
 .we-are__img{
